@@ -1,0 +1,60 @@
+body {
+  overflow: hidden;
+  min-height: 100vh;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url("../img/giphy.gif") center/cover no-repeat;
+
+  .images {
+    background: yellow;
+    flex: 0 0 80%;
+    min-height: 65vh;
+    background: url("../img/bcg-3.jpeg") center/cover no-repeat;
+    border-radius: 15px;
+    -webkit-box-shadow: 10px -2px 59px 30px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px -2px 59px 30px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px -2px 59px 30px rgba(0, 0, 0, 0.75);
+    position: relative;
+
+    .btn {
+      display: inline-block;
+      background: #fff;
+      color: black;
+      border: 3px solid rgb(0, 238, 255);
+      font-size: 1.5rem;
+      padding: 0.5rem;
+      border-radius: 15%;
+      -webkit-box-shadow: 10px -2px 26px 0px rgba(0, 0, 0, 0.75);
+      -moz-box-shadow: 10px -2px 26px 0px rgba(0, 0, 0, 0.75);
+      box-shadow: 10px -2px 26px 0px rgba(0, 0, 0, 0.75);
+      outline: none;
+      cursor: pointer;
+
+      &:active {
+        background: rgb(209, 209, 209);
+        box-shadow: 1px 1px grey;
+      }
+
+      &:hover {
+        background: rgb(0, 238, 255);
+        color: #fff;
+      }
+
+      &.prevBtn {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translate(-50%, -50%);
+      }
+
+      &.nextBtn {
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translate(50%, -50%);
+      }
+    }
+  }
+}
